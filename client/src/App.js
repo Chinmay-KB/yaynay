@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import Sawo from 'sawo';
+import SawoLogin from 'sawo-react';
 
 var config = {
   // should be same as the id of the container created on 3rd step
@@ -10,18 +10,17 @@ var config = {
   // Add the API key copied from 2nd step
   apiKey: process.env.REACT_APP_API_KEY,
   // Add a callback here to handle the payload sent by sdk
-  onSuccess: (payload) => {
-    alert(payload);
-  },
+  onSuccess: loginCallback,
 };
-let sawo = new Sawo(config);
+
+function loginCallback(payload) {
+  console.log(payload);
+}
 
 function App() {
   const [data, setData] = React.useState(null);
 
   React.useEffect(() => {
-    sawo.showForm();
-
     fetch('/api')
       .then((res) => res.json())
       .then((data) => setData(data.message + 'ffff'));
@@ -30,10 +29,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div
-          id="sawo-container"
-          style={{ width: '300px', height: '300px' }}
-        ></div>
+        <SawoLogin config={config}/>
         <p>{!data ? 'Loading...' : data}</p>
       </header>
     </div>
