@@ -1,5 +1,5 @@
 # yaynay
-A dummy project integrating one tap login by [Sawo Labs](https://sawolabs.com/). </br>
+A dummy project integrating one tap login by [Sawo Labs](https://sawolabs.com/). As this was the first time I did something on react, the project is rather very simple.
 [Web app here](https://yay-nay.herokuapp.com/)
 
 ## What it does.
