@@ -1,6 +1,6 @@
 # yaynay
 A dummy project integrating one tap login by [Sawo Labs](https://sawolabs.com/). 
-[](https://yay-nay.herokuapp.com/)
+[Web app here](https://yay-nay.herokuapp.com/)
 
 ## What it does.
 - You will see as soon as you open the page there is a `yay` and a `nay`.
