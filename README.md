@@ -1,5 +1,5 @@
 # yaynay
-A dummy project integrating one tap login by [Sawo Labs](https://sawolabs.com/). 
+A dummy project integrating one tap login by [Sawo Labs](https://sawolabs.com/). </br>
 [Web app here](https://yay-nay.herokuapp.com/)
 
 ## What it does.
